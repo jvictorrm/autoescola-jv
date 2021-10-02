@@ -1,0 +1,23 @@
+import Hero from ".";
+import { render } from "@testing-library/react";
+
+test("renders Hero with children", () => {
+  const { debug, getByText } = render(
+    <Hero>
+      <p>Jão</p>
+    </Hero>
+  );
+
+  // debug(); para depurar a renderizacao do componente ao executar teste
+
+  expect(getByText("Jão")).toBeInTheDocument();
+});
+
+test("renders image background", () => {
+  const image = "http://test/image.jpg";
+  const { getByTestId } = render(<Hero image={image} />);
+
+  expect(getByTestId("hero")).toHaveStyleRule({
+    backgroundImage: image,
+  });
+});
