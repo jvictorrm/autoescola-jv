@@ -3,9 +3,10 @@ import BgHighwayImage from "../../stories/assets/bg-highway.jpg";
 import BgCarImage from "../../stories/assets/bg-car.jpg";
 import Heading from "../Heading";
 import { text } from "@storybook/addon-knobs";
+import Button from "components/Button";
 
 export default {
-  title: "Global/Hero",
+  title: "Components/Hero",
   component: Hero,
 };
 
@@ -29,5 +30,8 @@ export const withList = () => (
       <li>Commodi perspiciatis numquam minima aliquid.</li>
       <li>Possimus quas consequatur a quaerat fuga molestias cum dolore.</li>
     </ul>
+    <Button variant="outlined" color="primary">
+      Matricule-se agora
+    </Button>
   </Hero>
 );
