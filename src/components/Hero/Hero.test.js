@@ -1,5 +1,5 @@
 import Hero from ".";
-import { render } from "@testing-library/react";
+import { render } from "test-utils";
 
 test("renders Hero with children", () => {
   const { debug, getByText } = render(
