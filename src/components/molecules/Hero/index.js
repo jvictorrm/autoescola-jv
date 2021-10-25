@@ -1,5 +1,6 @@
-import { Root, Container, Content } from "./styles.js";
+import { Root, Content } from "./styles.js";
 import PropTypes from "prop-types";
+import Container from "components/atoms/Container";
 
 const Hero = ({ image, children }) => {
   return (

@@ -14,22 +14,9 @@ export const Root = styled.div`
   `}
 `;
 
-export const Container = styled.div`
-  width: 100%;
-  padding: 0 8px;
-
-  ${breakAt(BreakpointSizes.sm)} {
-    padding: 0 16px;
-  }
-
-  ${breakAt(BreakpointSizes.lg)} {
-    max-width: 1140px;
-    padding: 0;
-    margin: 0 auto;
-  }
-`;
-
 export const Content = styled.div`
+  display: inline-block;
+
   p,
   li {
     font-size: 20px;

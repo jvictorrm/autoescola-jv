@@ -7,7 +7,6 @@ export const Root = styled.div`
   text-align: center;
 
   & > h5 {
-    background-color: gray;
     margin: 16px 0;
     min-height: 3.12rem;
 
