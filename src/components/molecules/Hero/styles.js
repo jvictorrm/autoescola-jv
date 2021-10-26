@@ -1,7 +1,5 @@
 import styled, { css } from "styled-components";
 
-import { breakAt, BreakpointSizes } from "styles/Breakpoints";
-
 export const Root = styled.div`
   color: #fff;
   padding: 100px 0;

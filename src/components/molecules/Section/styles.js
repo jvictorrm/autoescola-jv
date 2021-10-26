@@ -1,5 +1,14 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Content = styled.div`
-  margin: 40px 0;
+  padding: 40px 0;
+  ${(props) =>
+    props.inverse &&
+    css`
+      background-color: #f7f7f7;
+    `}
+
+  h2 {
+    margin-top: 0;
+  }
 `;
