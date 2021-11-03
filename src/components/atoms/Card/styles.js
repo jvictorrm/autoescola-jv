@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Root = styled.div`
   background-color: #fff;
   border-radius: 4px;
+  overflow: hidden;
 `;
 
 export const Body = styled.div`
