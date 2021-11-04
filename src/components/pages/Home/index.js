@@ -10,6 +10,7 @@ import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
 import ProductGrid from "components/organisms/ProductGrid";
 import PlaceholderImage from "stories/assets/bg-car.jpg";
+import Accordion, { AccordionGroup } from "components/atoms/Accordion";
 
 const products = [
   {
@@ -121,6 +122,26 @@ const Home = () => (
       <Heading>
         <h2>Dúvidas recorrentes</h2>
       </Heading>
+      <AccordionGroup>
+        <Accordion title="Como eu renovo minha CNH?">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+          consequuntur neque quaerat, adipisci temporibus commodi hic veritatis
+          accusantium aliquid, mollitia repellendus minus. Laborum, sed
+          doloribus! Tempora cumque iusto totam maxime.
+        </Accordion>
+        <Accordion title="Como faço a mudança de categoria?">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+          consequuntur neque quaerat, adipisci temporibus commodi hic veritatis
+          accusantium aliquid, mollitia repellendus minus. Laborum, sed
+          doloribus! Tempora cumque iusto totam maxime.
+        </Accordion>
+        <Accordion title="Fui multado, e agora?">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+          consequuntur neque quaerat, adipisci temporibus commodi hic veritatis
+          accusantium aliquid, mollitia repellendus minus. Laborum, sed
+          doloribus! Tempora cumque iusto totam maxime.
+        </Accordion>
+      </AccordionGroup>
     </Section>
     <Footer />
   </>
