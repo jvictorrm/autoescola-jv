@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "babel-loader": "8.1.0",
+    "chromatic": "^6.0.5",
     "jest-styled-components": "^7.0.5",
     "prettier": "^2.4.1",
     "prop-types": "^15.7.2",
@@ -28,7 +29,8 @@
     "cover": "yarn test -- --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "chromatic --project-token=8fb43cb292fe"
   },
   "eslintConfig": {
     "extends": [
