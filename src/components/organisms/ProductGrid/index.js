@@ -17,20 +17,22 @@ const ProductGrid = ({ products }) => {
             showAll ? index <= products.length - 1 : index <= 2
           )
           .map((product) => (
-            <Card key={product.id}>
-              <CardMedia image={product.image} />
-              <CardBody>
-                <Heading>
-                  <h5>{product.title}</h5>
-                </Heading>
-                <p>{product.summary}</p>
-                <div>
-                  <Button variant="link" color="primary">
-                    Saiba mais
-                  </Button>
-                </div>
-              </CardBody>
-            </Card>
+            <div key={product.id}>
+              <Card>
+                <CardMedia image={product.image} />
+                <CardBody>
+                  <Heading>
+                    <h5>{product.title}</h5>
+                  </Heading>
+                  <p>{product.summary}</p>
+                  <div>
+                    <Button variant="link" color="primary">
+                      Saiba mais
+                    </Button>
+                  </div>
+                </CardBody>
+              </Card>
+            </div>
           ))}
       </GridContainer>
       {products.length > 3 && (
