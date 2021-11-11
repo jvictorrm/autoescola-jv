@@ -1,5 +1,7 @@
 # Auto Escola JV
 
+![CircleCI](https://img.shields.io/circleci/build/github/jvictorrm/autoescola-jv)
+
 Este projeto foi desenvolvido durante o curso [React Profissional](https://nardiniacademy.com)
 
 Resultado final:
