@@ -1,3 +1,4 @@
+/* eslint-disable jest/valid-title */
 import { render, screen, fireEvent } from "test-utils";
 import ProductGrid from ".";
 

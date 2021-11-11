@@ -2,7 +2,7 @@ import Hero from ".";
 import { render } from "test-utils";
 
 test("renders Hero with children", () => {
-  const { debug, getByText } = render(
+  const { getByText } = render(
     <Hero>
       <p>Jão</p>
     </Hero>
