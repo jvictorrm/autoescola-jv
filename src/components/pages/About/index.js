@@ -6,6 +6,16 @@ import Section from "components/molecules/Section";
 import GridContainer from "components/atoms/GridContainer";
 import { ImageContainer } from "./styles";
 import Footer from "components/organisms/Footer";
+import Card, { CardMedia, CardMediaDescription } from "components/atoms/Card";
+
+const instructors = [
+  { id: 1, name: "Professor 1", avatar: BgCarImage },
+  { id: 2, name: "Professor 2", avatar: BgCarImage },
+  { id: 3, name: "Professor 3", avatar: BgCarImage },
+  { id: 4, name: "Professor 4", avatar: BgCarImage },
+  { id: 5, name: "Professor 5", avatar: BgCarImage },
+  { id: 6, name: "Professor 6", avatar: BgCarImage },
+];
 
 const About = () => (
   <>
@@ -81,6 +91,17 @@ const About = () => (
       <Heading>
         <h2>Conheça nossos professores</h2>
       </Heading>
+      <GridContainer sm={2} md={3} lg={4}>
+        {instructors.map((instructor) => (
+          <Card key={instructor.id}>
+            <CardMedia image={instructor.avatar}>
+              <CardMediaDescription>
+                <h5>{instructor.name}</h5>
+              </CardMediaDescription>
+            </CardMedia>
+          </Card>
+        ))}
+      </GridContainer>
     </Section>
     <Footer />
   </>
