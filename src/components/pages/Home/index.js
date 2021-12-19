@@ -11,6 +11,7 @@ import Footer from "components/organisms/Footer";
 import ProductGrid from "components/organisms/ProductGrid";
 import PlaceholderImage from "stories/assets/bg-car.jpg";
 import Accordion, { AccordionGroup } from "components/atoms/Accordion";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -110,7 +111,9 @@ const Home = () => (
             consequuntur ea enim tenetur autem id molestiae.
           </p>
           <div>
-            <Button color="primary">Saiba mais</Button>
+            <Button as={Link} to="/sobre" color="primary">
+              Saiba mais
+            </Button>
           </div>
         </div>
         <div>

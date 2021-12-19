@@ -5,6 +5,7 @@ import Heading from "components/atoms/Heading";
 import Button from "components/atoms/Button";
 import { Toolbar } from "./styles";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ProductGrid = ({ products }) => {
   const [showAll, setShowAll] = useState(false);
@@ -26,7 +27,12 @@ const ProductGrid = ({ products }) => {
                   </Heading>
                   <p>{product.summary}</p>
                   <div>
-                    <Button variant="link" color="primary">
+                    <Button
+                      variant="link"
+                      color="primary"
+                      as={Link}
+                      to="/servicos"
+                    >
                       Saiba mais
                     </Button>
                   </div>
