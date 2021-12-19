@@ -1,6 +1,5 @@
 import Heading from "components/atoms/Heading";
 import Hero from "components/molecules/Hero";
-import PropTypes from "prop-types";
 
 import BgCarImage from "assets/images/bg-car.jpg";
 import Section from "components/molecules/Section";
