@@ -5,12 +5,7 @@ import { Item, Root } from "./styles";
 const BreadCrumb = ({ items }) => (
   <Root>
     {items.map((item) => (
-      <Item
-        as={item.link && Link}
-        to={item.link}
-        key={item.label}
-        isClickable={!!item.link}
-      >
+      <Item as={item.link && Link} to={item.link} key={item.label}>
         {item.label}
       </Item>
     ))}

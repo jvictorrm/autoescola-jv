@@ -29,7 +29,7 @@ const ProductDetail = () => {
     <>
       <Hero image={BgCarImage}>
         <Heading>
-          <h1>Nome do serviço</h1>
+          <h1>Nome do Serviço</h1>
         </Heading>
         <BreadCrumb items={items} />
       </Hero>

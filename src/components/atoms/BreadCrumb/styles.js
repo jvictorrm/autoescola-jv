@@ -12,7 +12,7 @@ export const Item = styled.span`
   color: #fff;
 
   ${(props) =>
-    props.isClickable &&
+    props.to &&
     css`
       cursor: pointer;
 
