@@ -14,6 +14,7 @@ const light = {
       text: "#212121",
     },
     danger: { main: "#ff3d00", dark: "#b22a00", text: "#212121" },
+    border: "rgba(0, 0, 0, 0.125)",
   },
 };
 

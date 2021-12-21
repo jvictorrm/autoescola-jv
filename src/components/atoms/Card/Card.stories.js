@@ -1,4 +1,4 @@
-import Card, { CardBody, CardMedia } from ".";
+import Card, { CardBody, CardMedia, CardMediaDescription } from ".";
 import Section from "components/molecules/Section";
 import Heading from "components/atoms/Heading";
 import Button from "components/atoms/Button";
@@ -7,7 +7,7 @@ import PlaceholderImage from "stories/assets/bg-car.jpg";
 export default {
   title: "Components/Atoms/Card",
   component: Card,
-  subcomponents: { CardBody, CardMedia },
+  subcomponents: { CardBody, CardMedia, CardMediaDescription },
 };
 
 export const usage = () => (
@@ -49,6 +49,18 @@ export const withMedia = () => (
           </Button>
         </div>
       </CardBody>
+    </Card>
+  </Section>
+);
+
+export const onlyMedia = () => (
+  <Section inverse>
+    <Card>
+      <CardMedia image={PlaceholderImage}>
+        <CardMediaDescription>
+          <h5>Descrição da imagem</h5>
+        </CardMediaDescription>
+      </CardMedia>
     </Card>
   </Section>
 );
