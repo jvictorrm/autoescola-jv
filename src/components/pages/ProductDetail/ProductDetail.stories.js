@@ -1,3 +1,4 @@
+import { buildProduct } from "models/builders/products";
 import ProductDetail from ".";
 
 export default {
@@ -5,4 +6,6 @@ export default {
   component: ProductDetail,
 };
 
-export const usage = () => <ProductDetail></ProductDetail>;
+const product = buildProduct();
+
+export const usage = () => <ProductDetail product={product} />;

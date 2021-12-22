@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "babel-loader": "8.1.0",
     "chromatic": "^6.0.5",
+    "faker": "^5.5.3",
     "history": "^5.2.0",
     "jest-styled-components": "^7.0.6",
     "prettier": "^2.4.1",

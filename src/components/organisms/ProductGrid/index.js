@@ -6,7 +6,7 @@ import Button from "components/atoms/Button";
 import { Toolbar } from "./styles";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import ProductType from "types/ProductType";
+import ProductType from "models/types/ProductType";
 
 const ProductGrid = ({ products }) => {
   const [showAll, setShowAll] = useState(false);

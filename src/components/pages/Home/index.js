@@ -12,7 +12,7 @@ import ProductGrid from "components/organisms/ProductGrid";
 import Accordion, { AccordionGroup } from "components/atoms/Accordion";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import ProductType from "types/ProductType";
+import ProductType from "models/types/ProductType";
 
 const Home = ({ products }) => (
   <>
