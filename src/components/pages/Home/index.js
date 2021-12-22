@@ -9,44 +9,12 @@ import Feature from "components/atoms/Feature";
 import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
 import ProductGrid from "components/organisms/ProductGrid";
-import PlaceholderImage from "stories/assets/bg-car.jpg";
 import Accordion, { AccordionGroup } from "components/atoms/Accordion";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import ProductType from "models/types/ProductType";
 
-const products = [
-  {
-    id: 1,
-    image: PlaceholderImage,
-    title: "Título1",
-    summary: "Lorem ipsum",
-  },
-  {
-    id: 2,
-    image: PlaceholderImage,
-    title: "Título2",
-    summary: "Lorem ipsum",
-  },
-  {
-    id: 3,
-    image: PlaceholderImage,
-    title: "Título3",
-    summary: "Lorem ipsum",
-  },
-  {
-    id: 4,
-    image: PlaceholderImage,
-    title: "Título4",
-    summary: "Lorem ipsum",
-  },
-  {
-    id: 5,
-    image: PlaceholderImage,
-    title: "Título5",
-    summary: "Lorem ipsum",
-  },
-];
-
-const Home = () => (
+const Home = ({ products }) => (
   <>
     <Hero image={BgCarImage}>
       <Heading>
@@ -156,8 +124,13 @@ const Home = () => (
     <Footer />
   </>
 );
-Home.defaultProps = {};
 
-Home.propTypes = {};
+Home.defaultProps = {
+  products: [],
+};
+
+Home.propTypes = {
+  products: PropTypes.arrayOf(ProductType),
+};
 
 export default Home;
