@@ -14,20 +14,21 @@ import Footer from "components/organisms/Footer";
 import { PinnedItem, PinnedList } from "./styles";
 import { FaHome, FaRegIdCard, FaScroll } from "react-icons/fa";
 import BreadCrumb from "components/atoms/BreadCrumb";
+import ProductType from "types/ProductType";
 
-const items = [
-  { label: "Início", link: "/" },
-  { label: "Serviços" },
-  { label: "Nome do Serviço" },
-];
-
-const ProductDetail = () => (
+const ProductDetail = ({ product }) => (
   <>
     <Hero image={BgCarImage}>
       <Heading>
-        <h1>Nome do Serviço</h1>
+        <h1>{product.title}</h1>
       </Heading>
-      <BreadCrumb items={items} />
+      <BreadCrumb
+        items={[
+          { label: "Início", link: "/" },
+          { label: "Serviços" },
+          { label: product.title },
+        ]}
+      />
     </Hero>
     <Section>
       <p>
@@ -92,8 +93,12 @@ const ProductDetail = () => (
   </>
 );
 
-ProductDetail.defaultProps = {};
+ProductDetail.defaultProps = {
+  product: {},
+};
 
-ProductDetail.propTypes = {};
+ProductDetail.propTypes = {
+  product: ProductType,
+};
 
 export default ProductDetail;
