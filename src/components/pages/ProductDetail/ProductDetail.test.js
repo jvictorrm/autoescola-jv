@@ -1,8 +1,11 @@
+import { buildProduct } from "models/builders/products";
 import { render, screen } from "test-utils";
 import ProductDetail from ".";
 
 test("renders Product Detail page", () => {
-  render(<ProductDetail />);
-  const linkElement = screen.getByText("Certidão de Nascimento ou casamento");
+  render(<ProductDetail product={buildProduct()} />);
+  const linkElement = screen.getByText("Handcrafted Fresh Hat", {
+    selector: "h1",
+  });
   expect(linkElement).toBeInTheDocument();
 });
